@@ -48,4 +48,8 @@ class PostsController < ApplicationController
 
   end
 
+  def show
+    @post = index[params[:id].to_i]
+  end
+
 end
