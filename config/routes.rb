@@ -1,6 +1,7 @@
 LighthouseForum::Application.routes.draw do
 
   resources :posts
+  root to: 'posts#index' # This causes localhost:3000 to display index view
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
