@@ -1,0 +1,21 @@
+<h2>Create a post!</h2>
+
+<!-- form_for takes the object @post and uses it as a template to generate new models based on the information passed to the block -->
+
+<%= form_for @post do |f| %>
+  <div>
+    <%= f.label 'title' %><br>
+    <%= f.text_field 'title' %>
+  </div>
+  <div>
+    <%= f.label 'author' %><br>
+    <%= f.text_field 'author' %><br>
+  </div>
+  <div>
+    <%= f.label 'text' %><br>
+    <%= f.text_field 'text' %><br>
+  </div>
+  <div>
+    <%= f.submit 'Save' %>
+  </div>
+<% end %>
